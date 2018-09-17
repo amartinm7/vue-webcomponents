@@ -31,5 +31,5 @@ en mi caso lo hice a mano.
 
 https://github.com/webcomponents/webcomponentsjs
 
-![preview]: (https://raw.githubusercontent.com/amartinm7/vue-webcomponents/master/screetshot-preview.png)
+![preview](https://raw.githubusercontent.com/amartinm7/vue-webcomponents/master/screetshot-preview.png)
 
