@@ -1,0 +1,46 @@
+<template id="x-template">
+  <style>
+    p {
+      color: #42b983;
+    }
+  </style>
+  <p id="renderTarget">
+  </p>
+</template>
+<script>
+  const currentScript = document.currentScript
+  class XCarousel extends HTMLElement {
+
+    static get observedAttributes() {
+      return ['contents']
+    }
+
+    constructor() {
+      super();
+      let shadowRoot = this.attachShadow({mode: 'open'});
+      const template = currentScript.ownerDocument.querySelector('#x-template');
+      const instance = template.content.cloneNode(true);
+      shadowRoot.appendChild(instance);
+
+      this.contents = '';
+
+      setInterval(() => {
+        this.dispatchEvent(new Event('tick'));
+      }, 30000);
+    }
+
+    set contents(value) {
+      this._contents = value;
+      this.shadowRoot.getElementById('renderTarget').innerText = this._contents;
+    }
+
+    get contents() {
+      return this._contents;
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+      this[name] = newValue;
+    }
+  }
+  customElements.define('x-carousel', XCarousel)
+</script>

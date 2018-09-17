@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-webcomponents</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.13/webcomponents-lite.js"></script>
+     <!--ojo cuando ponemos dos components el document.currentScript apunta al primer <link>,
+     asi que aunque pongamos varios imports solo funciona el primero. Hay herramientas como polymer-bundler
+      para empaquetar todos los import html en uno solo entonces ya si que funcionaria como debe-->
+    <!--<link rel="import" href="./src/carousel.html" async>-->
+    <!--<link rel="import" href="./src/ticking-paragraph.html" async>-->
+    <link rel="import" href="./src/webcomponents/simpleCarousel.html" async>
+    <!--<link rel="import" href="src/webcomponents/dist/bundleComponents.html" async>-->
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
