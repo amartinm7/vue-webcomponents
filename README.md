@@ -17,6 +17,7 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+The tricky part:
 La carpeta webcomponents contiene los componentes creados con el standard.
 hay que crear un fichero html con la mezcla de los componentes en si para que los pueda cargar la pagina html principal.
 si ponemos varios link import solo carga el primero y los demas no funcionan bien,
