@@ -30,3 +30,6 @@ existen soluciones como polymer-bundler para crear un unico html con varios html
 en mi caso lo hice a mano.
 
 https://github.com/webcomponents/webcomponentsjs
+
+[preview]: screetshot-preview.jpg
+
