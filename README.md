@@ -1,4 +1,7 @@
+![logo](https://blog.gft.com/es/wp-content/uploads/sites/3/2017/03/logo-192x192.png)
 # vue-webcomponents
+https://www.webcomponents.org
+
 The main point of this example is to be able to create a HTML TAG called x-simple-carousel which manages the creation of simple carousel. Everytime you use the tag a new carousel is created. The application of this technology is so huge. Instead of create a full HTML page with a lot of tags, you can create the whole page using custom webcomponents. These webcomponents can be created on the fly, injected in the DOM tree.
 > A Vue.js project
 
