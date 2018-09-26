@@ -1,4 +1,7 @@
+![logo](https://vuejs.org/images/icons/android-icon-192x192.png)
 ![logo](https://blog.gft.com/es/wp-content/uploads/sites/3/2017/03/logo-192x192.png)
+
+
 # vue-webcomponents
 https://www.webcomponents.org
 
